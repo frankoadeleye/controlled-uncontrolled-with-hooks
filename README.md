@@ -1,7 +1,7 @@
 # Solving The Controlled Input Problem Using UseRef Hook
 
 (Kindly first checkout the problem
-[here](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks/tree/problem-controlled-inputs)
+[here](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks/tree/problem-controlled-input)
 before continuing)
 
 To solve this, the `useRef()` hook is introduced, which points to the DOM HTML
