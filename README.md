@@ -31,9 +31,12 @@ respectively. Then click 'create card'.
 
 Now return to the input fields and try to change the values of the fields. You'd
 notice that the result in the card is also updated in real-time. This is because
-we have an unchange handler that actives updates the state and prints the result
-simultaneously. This is the default state of React and how it is created to
-work. Such inputs are called `controlled inputs`.
+we have an onchange handler, which creates unnecessary (as the case may be)
+re-renders, by actively updating the state and printing the result
+simultaneously. This is the default way of React and how it is created to work.
+Such inputs are called `controlled inputs`, because they are controlled with an
+onChange handler. by default React expects you to have an onChange handler for
+every input whose state is meant to change depending on user input.
 
 Now, say we don't want the update in the browser to be instant but we only want
 the update in the card to be after we click the button. How do we go about this?
