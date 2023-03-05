@@ -10,6 +10,12 @@ Enter the folder with:
 
 `cd controlled-uncontrolled-with-hooks`
 
+Checkout out to the appropraite branch: (problem-controlled-input branch):
+
+`git fetch origin`, then:
+
+`git checkout -b problem-controlled-input origin/problem-controlled-input`
+
 Install dependencies with:
 
 `yarn`
@@ -34,6 +40,6 @@ the update in the card to be after we click the button. How do we go about this?
 
 We can solve this two ways:
 
-[The first way: using a second state ](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks/solved-controlled-inputs).
+[The first way: using a second state ](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks/tree/solved-controlled-inputs).
 
 [The second (better) way: useRef](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks).
