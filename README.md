@@ -11,3 +11,5 @@ update the value in the input field. All the `handleSubmit` does is print the
 current value in the DOM element value only when the button is clicked.
 
 Thanks for checking this out.
+
+(Kindly leave a star if you find this helpful in your React journey)
