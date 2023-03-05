@@ -1,8 +1,11 @@
 # Understanding Controlled Input
 
-First let us clone and run this project:
+Firstly,
 
-Open your command prompt or bash and enter:
+Fork the repo
+
+Then clone and run this project by opening your command prompt or bash and
+enter:
 
 `git clone https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks.git`
 
@@ -48,3 +51,5 @@ We can solve this two ways:
 [The first way: using a second state ](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks/tree/solved-controlled-inputs).
 
 [The second (better) way: useRef](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks).
+
+(Kindly leave a star if you find this helpful in your React journey)
