@@ -1,39 +1,12 @@
-# Understanding Controlled Input
+# Solving The Controlled Input Problem
 
-First let us clone and run this project:
+(Kindly first checkout the problem
+[here](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks/problem-controlled-inputs)
+before continuing)
 
-Open your command prompt or bash and enter:
+To successfully solve this problem, and prevent unnecessary re-renders on input
+change,
+`we created another state for each input field that will update the updated variable with the current input field value.`
 
-`git clone https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks.git`
-
-Enter the folder with:
-
-`cd controlled-uncontrolled-with-hooks`
-
-Install dependencies with:
-
-`yarn`
-
-Run your project with:
-
-`yarn start`
-
-## The problem:
-
-Check your browser for result and enter your 'first name' and 'last name'
-respectively. Then click 'create card'.
-
-Now return to the input fields and try to change the values of the fields. You'd
-notice that the result in the card is also updated in real-time. This is because
-we have an unchange handler that actives updates the state and prints the result
-simultaneously. This is the default state of React and how it is created to
-work. Such inputs are called `controlled inputs`.
-
-Now, say we don't want the update in the browser to be instant but we only want
-the update in the card to be after we click the button. How do we go about this?
-
-We can solve this two ways:
-
-[The first way: using a second state ](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks/solved-controlled-inputs).
-
-[The second (better) way: useRef](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks).
+Now checkout how to acheive this using useRef() hook
+[here](https://github.com/frankoadeleye/controlled-uncontrolled-with-hooks).

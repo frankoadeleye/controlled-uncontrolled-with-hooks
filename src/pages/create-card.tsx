@@ -12,6 +12,11 @@ function CreateCardpage() {
     first_name: "",
   });
 
+  const [updatedValues, setUpdatedValues] = useState({
+    last_name: values.last_name,
+    first_name: values.first_name,
+  });
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setValues((prevState) => {
@@ -24,6 +29,10 @@ function CreateCardpage() {
 
   const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setUpdatedValues({
+      last_name: values.last_name,
+      first_name: values.first_name,
+    });
     setShowCard(true);
   };
 
@@ -51,7 +60,7 @@ function CreateCardpage() {
         <Button text="Create card" />
       </form>
       <div className="card-wrapper">
-        <Card cardValues={values} showCard={showCard} />
+        <Card cardValues={updatedValues} showCard={showCard} />
       </div>
     </div>
   );
