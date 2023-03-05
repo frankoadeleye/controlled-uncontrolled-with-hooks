@@ -35,8 +35,10 @@ we have an onchange handler, which creates unnecessary (as the case may be)
 re-renders, by actively updating the state and printing the result
 simultaneously. This is the default way of React and how it is created to work.
 Such inputs are called `controlled inputs`, because they are controlled with an
-onChange handler. by default React expects you to have an onChange handler for
-every input whose state is meant to change depending on user input.
+onChange handler.
+
+By default React expects you to have an onChange handler for every input whose
+state is meant to change depending on user input.
 
 Now, say we don't want the update in the browser to be instant but we only want
 the update in the card to be after we click the button. How do we go about this?
