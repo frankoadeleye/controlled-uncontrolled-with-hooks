@@ -29,8 +29,8 @@ we have an unchange handler that actives updates the state and prints the result
 simultaneously. This is the default state of React and how it is created to
 work. Such inputs are called `controlled inputs`.
 
-Now, say we don't the update in the browser to be instant but we only want the
-update in the card to be after we click the button. How do we go about this?
+Now, say we don't want the update in the browser to be instant but we only want
+the update in the card to be after we click the button. How do we go about this?
 
 We can solve this two ways:
 
