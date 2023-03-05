@@ -1,0 +1,36 @@
+form {
+  width: auto;
+  box-sizing: border-box;
+  margin: 0px 20px;
+}
+
+.card-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inputs-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 400px) {
+  form {
+    width: 240px;
+    box-sizing: border-box;
+    margin: 0px 20px;
+  }
+}
