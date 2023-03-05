@@ -1,31 +1,12 @@
 import "src/styles/card-page.css";
 import InputField from "src/common/input-field";
 import Button from "src/common/button";
-import { useState } from "react";
 import Card from "src/components/card";
+import useCard from "src/hooks/card";
 
 function CreateCardpage() {
-  const [showCard, setShowCard] = useState(false);
-
-  const [values, setValues] = useState({
-    last_name: "",
-    first_name: "",
-  });
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setValues((prevState) => {
-      return {
-        ...prevState,
-        [name]: value,
-      };
-    });
-  };
-
-  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setShowCard(true);
-  };
+  const { showCard, values, lastNameRef, firstNameRef, handleSubmit } =
+    useCard();
 
   return (
     <div className="card-page">
@@ -36,7 +17,7 @@ function CreateCardpage() {
             label="Last Name"
             type="text"
             name="last_name"
-            onChange={handleChange}
+            inputRef={lastNameRef}
             required
           />
           <InputField
@@ -44,7 +25,7 @@ function CreateCardpage() {
             label="First Name"
             type="text"
             name="first_name"
-            onChange={handleChange}
+            inputRef={firstNameRef}
             required
           />
         </div>
